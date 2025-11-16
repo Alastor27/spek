@@ -56,7 +56,7 @@ SpekWindow::SpekWindow(const wxString& path) :
 {
     this->description = _("Spek - Acoustic Spectrum Analyser");
     SetTitle(this->description);
-    SetSize(this->FromDIP(wxSize(640, 480)));
+    SetSize(this->FromDIP(wxSize(1920, 1080)));
 
 #ifndef OS_OSX
     SetIcons(wxArtProvider::GetIconBundle(ART_SPEK, wxART_FRAME_ICON));
@@ -90,27 +90,27 @@ SpekWindow::SpekWindow(const wxString& path) :
 
     SetMenuBar(menu);
 
-    wxToolBar *toolbar = CreateToolBar();
-    toolbar->AddTool(
-        wxID_OPEN,
-        wxEmptyString,
-        wxArtProvider::GetBitmap(ART_OPEN, wxART_TOOLBAR),
-        menu_file_open->GetItemLabelText()
-    );
-    toolbar->AddTool(
-        wxID_SAVE,
-        wxEmptyString,
-        wxArtProvider::GetBitmap(ART_SAVE, wxART_TOOLBAR),
-        menu_file_save->GetItemLabelText()
-    );
-    toolbar->AddStretchableSpace();
-    toolbar->AddTool(
-        wxID_HELP,
-        wxEmptyString,
-        wxArtProvider::GetBitmap(ART_HELP, wxART_TOOLBAR),
-        _("Help")
-    );
-    toolbar->Realize();
+//    wxToolBar *toolbar = CreateToolBar();
+//    toolbar->AddTool(
+//        wxID_OPEN,
+//        wxEmptyString,
+//        wxArtProvider::GetBitmap(ART_OPEN, wxART_TOOLBAR),
+//        menu_file_open->GetItemLabelText()
+//    );
+//    toolbar->AddTool(
+//        wxID_SAVE,
+//        wxEmptyString,
+//        wxArtProvider::GetBitmap(ART_SAVE, wxART_TOOLBAR),
+//        menu_file_save->GetItemLabelText()
+//    );
+//    toolbar->AddStretchableSpace();
+//    toolbar->AddTool(
+//        wxID_HELP,
+//        wxEmptyString,
+//        wxArtProvider::GetBitmap(ART_HELP, wxART_TOOLBAR),
+//        _("Help")
+//    );
+//    toolbar->Realize();
 
     wxSizer *sizer = new wxBoxSizer(wxVERTICAL);
 
